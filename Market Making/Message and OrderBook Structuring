@@ -1,0 +1,16 @@
+# Go to https://lobsterdata.com/info/DataSamples.php and download the 10 level data for amazon and microsoft
+# Save in a folder named 'data' where this file is saved.
+
+import pandas as pd
+from matplotlib import pyplot as plt
+from matplotlib import numpy as np
+from matplotlib.dates import DateFormatter
+import os 
+  
+cwd=os.getcwd()
+
+#The time component in the data is recorded in seconds after midnight.
+
+startTrad = 9.5*60*60       # 9:30:00.000 in s after midnight
+endTrad = 16*60*60        # 16:00:00.000 in s after midnight
+
